@@ -7,45 +7,41 @@
 import pkgutil
 import importlib
 
-from flask import Blueprint
-from flask.json import JSONEncoder as BaseJSONEncoder
+# from flask import Blueprint
+# from flask.json import JSONEncoder as BaseJSONEncoder
 
 
-def register_blueprints(app, package_name, package_path):
+def register_blueprints( package_name, package_path):
     """Register all Blueprint instances on the specified Flask application found
     in all modules for the specified package.
     :param app: the Flask application
     :param package_name: the package name
     :param package_path: the package path
     """
-    rv = []
-    for _, name, _ in pkgutil.iter_modules(package_path):
+    # rv = []
+    for l1, name, l2 in pkgutil.iter_modules(package_path):
+        print l1,name,l2
         m = importlib.import_module('%s.%s' % (package_name, name))
-        # print " -----m is:------  ",m
-        # print " -----name is:------ ",name
-        # print " ----dir(m) is:-----" ,dir(m)
-        # print "------getattr(m,dir(m)[8])-----",getattr(m,dir(m)[8])
+
         for item in dir(m):
             item = getattr(m, item)
-            #print "-----new item is:-----",item
+            print item
             # 检查item是否为Blueprient类型
-            if isinstance(item, Blueprint):
-                print item
-                app.register_blueprint(item)
-                #print
-            rv.append(item)
-    return rv
+            # if isinstance(item, Blueprint):
+            #     app.register_blueprint(item)
+            # rv.append(item)
+    # return rv
 
 
-class JSONEncoder(BaseJSONEncoder):
-    """Custom :class:`JSONEncoder` which respects objects that include the
-    :class:`JsonSerializer` mixin.
-    """
-
-    def default(self, obj):
-        if isinstance(obj, JsonSerializer):
-            return obj.to_json()
-        return super(JSONEncoder, self).default(obj)
+# class JSONEncoder(BaseJSONEncoder):
+#     """Custom :class:`JSONEncoder` which respects objects that include the
+#     :class:`JsonSerializer` mixin.
+#     """
+#
+#     def default(self, obj):
+#         if isinstance(obj, JsonSerializer):
+#             return obj.to_json()
+#         return super(JSONEncoder, self).default(obj)
 
 
 class JsonSerializer(object):
