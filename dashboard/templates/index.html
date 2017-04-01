@@ -4,7 +4,45 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style>
+    body {
+        text-align: center;
+        background-color: #DDDDDD
+    }
+
+    div {
+        display: inline;
+    }
+
+    .span12 {
+        padding-top: 8%;
+    }
+
+    .span6 {
+        margin-right: 10%;
+    }
+
+</style>
 <body>
-hello word openstack-test-ui
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <h1 class="text-center">
+                <var>OpenStack健康检测</var>
+            </h1>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="span6">
+                    <a href="{{ url_for('tempest_index.index') }}"/><image alt="Tempest test 入口" src="../static/home/image/tempest.png"/>
+                </div>
+                <div class="span7">
+                    <a href="{{ url_for('rally_index.index') }}"/><image alt="Rally test 入口" src="../static/home/image/rally.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

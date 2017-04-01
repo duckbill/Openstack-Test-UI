@@ -30,7 +30,7 @@ def register_blueprints(app, package_name, package_path):
             #print "-----new item is:-----",item
             # 检查item是否为Blueprient类型
             if isinstance(item, Blueprint):
-                print item
+                # print item
                 app.register_blueprint(item)
                 #print
             rv.append(item)

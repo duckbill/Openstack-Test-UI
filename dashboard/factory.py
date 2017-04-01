@@ -16,8 +16,6 @@ def create_app(package_name, package_path):
     :param package_path: application package path
     """
     app = Flask(package_name)
-
-
     register_blueprints(app, package_name, package_path)
     return app
 
@@ -26,11 +24,6 @@ def create_app(package_name, package_path):
 
 
 
-
-
-
-
-    import os
 
     # from celery import Celery
 

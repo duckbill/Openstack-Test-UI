@@ -4,14 +4,14 @@
 # @Mail      :  jczhangmail@126.com
 # @File      :  __init__.py.py
 
-from . import keystone,cinder,glance,neutron,nova,rally_index
+from . import keystone,cinder,glance,neutron,nova,tempest_index
 
 keystone = keystone.keystone
 cinder = cinder.cinder
 glance = glance.glance
 neutron = neutron.neutron
 nova = nova.nova
-rally_index = rally_index.rally_index
+tempest_index = tempest_index.tempest_index
 #
 # from dashboard import factory
 # from dashboard.helpers import JSONEncoder

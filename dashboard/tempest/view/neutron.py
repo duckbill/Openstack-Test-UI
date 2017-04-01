@@ -7,14 +7,14 @@
 from flask import Blueprint,render_template
 
 
-neutron = Blueprint('neutron',__name__,url_prefix='/raly/neutron')
+neutron = Blueprint('neutron',__name__,url_prefix='/tempest/neutron')
 
 
 @neutron.route('/')
 @neutron.route('/index')
 def index():
-    return render_template('rally/neutron/neutron_index.html')
+    return render_template('tempest/neutron/neutron_index.html')
 
 @neutron.route('/detail')
 def detail():
-    return render_template("rally/neutron/neutron_detail.html")
+    return render_template("tempest/neutron/neutron_detail.html")
