@@ -2,46 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82b75e1b-2c15-4d8a-883a-6f9cd9e26db9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/static/home/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/static/home/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/static/home/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/static/home/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/static/home/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/static/home/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/static/home/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/static/home/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/static/home/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/rally/remote/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/rally/remote/remote_ssh.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/static/home/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/static/home/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/static/home/css/sb-admin-2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/static/home/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/static/home/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard/templates/backup.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/rally/ssh-test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/rally/template-test/a.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/rally/template-test/b.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/rally/template-test/index.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dashboard/static/rally/css/.gitignore" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/static/home/css/bootstrap.css" afterPath="$PROJECT_DIR$/dashboard/static/rally/css/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/static/home/css/font-awesome.css" afterPath="$PROJECT_DIR$/dashboard/static/rally/css/font-awesome.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/static/home/css/sb-admin-2.css" afterPath="$PROJECT_DIR$/dashboard/static/rally/css/sb-admin-2.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/static/home/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/dashboard/static/rally/fonts/FontAwesome.otf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/static/home/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/dashboard/static/rally/fonts/fontawesome-webfont.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/static/home/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/dashboard/static/rally/fonts/fontawesome-webfont.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/static/home/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/dashboard/static/rally/fonts/fontawesome-webfont.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/static/home/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/dashboard/static/rally/fonts/fontawesome-webfont.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/static/home/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/dashboard/static/rally/fonts/fontawesome-webfont.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/static/home/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/dashboard/static/rally/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/static/home/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/dashboard/static/rally/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/static/home/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/dashboard/static/rally/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/static/home/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/dashboard/static/rally/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dashboard/static/home/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/dashboard/static/rally/fonts/glyphicons-halflings-regular.woff2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/rally/view/__init__.py" afterPath="$PROJECT_DIR$/dashboard/rally/view/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/rally/view/cinder.py" afterPath="$PROJECT_DIR$/dashboard/rally/view/cinder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/rally/view/glance.py" afterPath="$PROJECT_DIR$/dashboard/rally/view/glance.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/rally/view/keystone.py" afterPath="$PROJECT_DIR$/dashboard/rally/view/keystone.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/rally/view/neutron.py" afterPath="$PROJECT_DIR$/dashboard/rally/view/neutron.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/rally/view/nova.py" afterPath="$PROJECT_DIR$/dashboard/rally/view/nova.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/rally/view/rally_index.py" afterPath="$PROJECT_DIR$/dashboard/rally/view/rally_index.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/tempest/view/__init__.py" afterPath="$PROJECT_DIR$/dashboard/tempest/view/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/tempest/view/cinder.py" afterPath="$PROJECT_DIR$/dashboard/tempest/view/cinder.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/tempest/view/glance.py" afterPath="$PROJECT_DIR$/dashboard/tempest/view/glance.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/tempest/view/keystone.py" afterPath="$PROJECT_DIR$/dashboard/tempest/view/keystone.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/tempest/view/neutron.py" afterPath="$PROJECT_DIR$/dashboard/tempest/view/neutron.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/tempest/view/nova.py" afterPath="$PROJECT_DIR$/dashboard/tempest/view/nova.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/templates/rally/rally_index.html" afterPath="$PROJECT_DIR$/dashboard/templates/rally/rally_index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard/wsgi.py" afterPath="$PROJECT_DIR$/dashboard/wsgi.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/rally/a.py" afterPath="$PROJECT_DIR$/test/rally/a.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/rally/view.py" afterPath="$PROJECT_DIR$/test/rally/view.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.py" afterPath="$PROJECT_DIR$/test/test.py" />
     </list>
     <ignored path="Openstack-Test-UI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,7 +37,7 @@
     <SUITE FILE_PATH="coverage/Openstack_Test_UI$b.coverage" NAME="b Coverage Results" MODIFIED="1491469093036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/rally" />
     <SUITE FILE_PATH="coverage/Openstack_Test_UI$view.coverage" NAME="view Coverage Results" MODIFIED="1491469252660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/rally" />
     <SUITE FILE_PATH="coverage/Openstack_Test_UI$ssh_test.coverage" NAME="ssh-test Coverage Results" MODIFIED="1491379802262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/rally" />
-    <SUITE FILE_PATH="coverage/Openstack_Test_UI$wsgi.coverage" NAME="wsgi Coverage Results" MODIFIED="1491475742563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
+    <SUITE FILE_PATH="coverage/Openstack_Test_UI$wsgi.coverage" NAME="wsgi Coverage Results" MODIFIED="1491477063993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dashboard" />
     <SUITE FILE_PATH="coverage/Openstack-Test-UI$Openstack_Test_UI.coverage" NAME="Openstack-Test-UI Coverage Results" MODIFIED="1490687164100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Openstack_Test_UI$Openstack_Test_UI.coverage" NAME="Openstack-Test-UI Coverage Results" MODIFIED="1490881509919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Openstack_Test_UI$test.coverage" NAME="test Coverage Results" MODIFIED="1490972476369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
@@ -110,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/dashboard/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
               <folding>
                 <element signature="e#129#163#0" expanded="true" />
               </folding>
@@ -151,7 +128,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="540">
               <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
               <folding />
             </state>
@@ -161,7 +138,7 @@
       <file leaf-file-name="rally_index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard/templates/rally/rally_index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="4788">
               <caret line="266" column="59" lean-forward="false" selection-start-line="266" selection-start-column="59" selection-end-line="266" selection-end-column="59" />
               <folding />
             </state>
@@ -276,6 +253,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -356,7 +335,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tempest" />
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Openstack-Test-UI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Openstack-Test-UI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rally" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Openstack-Test-UI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Openstack-Test-UI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -380,8 +403,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -400,17 +421,18 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dashboard/tempest/static" />
-      <recent name="$PROJECT_DIR$/dashboard/rally" />
-      <recent name="$PROJECT_DIR$/dashboard/templates/rally/keystone" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dashboard/static/home/fonts" />
       <recent name="$PROJECT_DIR$/dashboard/static/home/css" />
       <recent name="$PROJECT_DIR$/dashboard/static/home/image" />
       <recent name="$PROJECT_DIR$/dashboard/tempest" />
       <recent name="$PROJECT_DIR$/dashboard/templates/tempest" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dashboard/static/rally" />
+      <recent name="$PROJECT_DIR$/dashboard/tempest/static" />
+      <recent name="$PROJECT_DIR$/dashboard/rally" />
+      <recent name="$PROJECT_DIR$/dashboard/templates/rally/keystone" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -791,11 +813,11 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22103004" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22389127" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25662652" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4060241" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4060241" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -925,21 +947,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/static/home/css/sb-admin-2.css">
+    <entry file="file://$PROJECT_DIR$/dashboard/static/rally/css/sb-admin-2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/static/home/css/font-awesome.css">
+    <entry file="file://$PROJECT_DIR$/dashboard/static/rally/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard/static/home/css/bootstrap.css">
+    <entry file="file://$PROJECT_DIR$/dashboard/static/rally/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="289" column="1" lean-forward="false" selection-start-line="289" selection-start-column="1" selection-end-line="289" selection-end-column="1" />
@@ -1076,7 +1098,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,7 +1105,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1092,7 +1112,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1100,7 +1119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1164,7 +1182,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="540">
           <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
           <folding />
         </state>
@@ -1172,7 +1190,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dashboard/templates/rally/rally_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="4788">
           <caret line="266" column="59" lean-forward="false" selection-start-line="266" selection-start-column="59" selection-end-line="266" selection-end-column="59" />
           <folding />
         </state>
@@ -1181,7 +1199,7 @@
     <entry file="file://$PROJECT_DIR$/dashboard/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding>
             <element signature="e#129#163#0" expanded="true" />
           </folding>
