@@ -4,10 +4,11 @@
 # @Mail      :  jczhangmail@126.com
 # @File      :  wsgi.py
 
+from flask import  render_template
+
 from dashboard import create_app
 from dashboard.rally.view import *
 from dashboard.tempest.view import *
-from flask import  render_template
 
 
 application = create_app()

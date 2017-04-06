@@ -7,14 +7,14 @@
 from flask import Blueprint,render_template
 
 
-glance = Blueprint('glance',__name__,url_prefix='/rally/glance')
+rally_glance = Blueprint('glance',__name__,url_prefix='/rally/glance')
 
 
-@glance.route('/')
-@glance.route('/index')
+@rally_glance.route('/')
+@rally_glance.route('/index')
 def index():
     return render_template('rally/glance/glance_index.html')
 
-@glance.route('/detail')
+@rally_glance.route('/detail')
 def detail():
     return render_template("rally/glance/glance_detail.html")

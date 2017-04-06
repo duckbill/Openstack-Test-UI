@@ -7,14 +7,14 @@
 from flask import Blueprint,render_template
 
 
-glance = Blueprint('glance',__name__,url_prefix='/tempest/glance')
+tempest_glance = Blueprint('tempest_glance',__name__,url_prefix='/tempest/glance')
 
 
-@glance.route('/')
-@glance.route('/index')
+@tempest_glance.route('/')
+@tempest_glance.route('/index')
 def index():
     return render_template('tempest/glance/glance_index.html')
 
-@glance.route('/detail')
+@tempest_glance.route('/detail')
 def detail():
     return render_template("tempest/glance/glance_detail.html")

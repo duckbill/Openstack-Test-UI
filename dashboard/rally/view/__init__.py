@@ -6,11 +6,11 @@
 
 from . import keystone,cinder,glance,neutron,nova,rally_index
 
-keystone = keystone.keystone
-cinder = cinder.cinder
-glance = glance.glance
-neutron = neutron.neutron
-nova = nova.nova
+rally_keystone = keystone.rally_keystone
+rally_cinder = cinder.rally_cinder
+rally_glance = glance.rally_glance
+rally_neutron = neutron.rally_neutron
+rally_nova = nova.rally_nova
 rally_index = rally_index.rally_index
 #
 # from dashboard import factory

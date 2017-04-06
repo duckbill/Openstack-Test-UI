@@ -9,6 +9,8 @@ from flask import Blueprint,render_template
 
 rally_index = Blueprint('rally_index',__name__,url_prefix='/rally')
 
+# rally_index = Blueprint('rally',__name__,subdomain='rally')
+
 
 @rally_index.route('/')
 @rally_index.route('/index')

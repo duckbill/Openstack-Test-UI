@@ -7,14 +7,14 @@
 from flask import Blueprint,render_template
 
 
-keystone = Blueprint('keystone',__name__,url_prefix='/tempest/keystone')
+tempest_keystone = Blueprint('tempest_keystone',__name__,url_prefix='/tempest/keystone')
 
 
-@keystone.route('/')
-@keystone.route('/index')
+@tempest_keystone.route('/')
+@tempest_keystone.route('/index')
 def index():
     return render_template('tempest/keystone/keystone_index.html')
 
-@keystone.route('/detail')
+@tempest_keystone.route('/detail')
 def detail():
     return render_template("keystone/keystone_detail.html")

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Author    :  Jason
 # @Mail      :  jczhangmail@126.com
-# @File      :  test.py
+# @File      :  remote_ssh.py
 
 def args_test(param1,*args):
     print "first param is:",param1

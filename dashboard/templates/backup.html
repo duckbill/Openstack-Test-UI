@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+			<form class="form-inline">
+				<fieldset>
+					<legend>配置数据库</legend>
+					<p>
+						sqlite路径：<input type="text" />
+					</p>
+					<p>
+						<button class="btn" type="submit">提交</button>
+					</p>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+<script>
+function imagesSelected(myFiles) {
+var name = myFiles.value;
+alert(name);
+}
+</script>
+<input type="file" name="fileField" id="fileField"  onChange="imagesSelected(this)">
+</body>
+</html>

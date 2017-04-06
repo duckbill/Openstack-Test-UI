@@ -7,14 +7,14 @@
 from flask import Blueprint,render_template
 
 
-cinder = Blueprint('cinder',__name__,url_prefix='/rally/cinder')
+rally_cinder = Blueprint('rally_cinder',__name__,url_prefix='/rally/cinder')
 
 
-@cinder.route('/')
-@cinder.route('/index')
+@rally_cinder.route('/')
+@rally_cinder.route('/index')
 def index():
     return render_template('rally/ciner/cinder_index.html')
 
-@cinder.route('/detail')
+@rally_cinder.route('/detail')
 def detail():
     return render_template("rally/cinder/cinder_detail.html")

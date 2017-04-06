@@ -7,14 +7,14 @@
 from flask import Blueprint,render_template
 
 
-nova = Blueprint('nova',__name__,url_prefix='/rally/nova')
+rally_nova = Blueprint('rally_nova',__name__,url_prefix='/rally/nova')
 
 
-@nova.route('/')
-@nova.route('/index')
+@rally_nova.route('/')
+@rally_nova.route('/index')
 def index():
     return render_template('rally/nova/nova_index.html')
 
-@nova.route('/detail')
+@rally_nova.route('/detail')
 def detail():
     return render_template("rally/nova/nova_detail.html")
