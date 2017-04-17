@@ -1,0 +1,210 @@
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  text-align:center;
+}
+
+body {
+  font-family: "Microsoft Yahei","微软雅黑",Tahoma,Helvetica,Arial,sans-serif;
+}
+
+#logo {
+  padding-top: 7px;
+  padding-bottom: 12px;
+}
+
+#right-top {
+  padding-top: 50px;
+  height: 80px;
+  text-align: right;
+  font-size: 12px;
+}
+
+.headline {
+  width: 100%;
+  border-bottom: 2px solid RGB(223,223,223);
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.headline .headline-header {
+  height: 60px;
+  width: 220px;
+  border-bottom: 5px solid RGB(255, 222,42);
+  margin-bottom: -2px;
+}
+
+/**
+  * title-box 中的元素设置成inline－block，底部对齐，设置icon的margin-bottom来调节icon的高度
+  */
+.headline .title-box {
+  padding-top: 7px;
+}
+
+.headline .title-icon {
+  margin-bottom: -5px;
+  margin-left: 0px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.headline .title {
+  font-size: 20px;
+  font-family: "Microsoft YaHei";
+  font-weight: 800;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 5px;
+}
+
+.footer {
+  background-color: RGB(18,18,18);
+  border-top: 5px solid RGB(191,191,191);
+  padding-top: 30px;
+  padding-bottom: 14px;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+}
+
+.footer .footer-line {
+  border: none;
+  border-top: 1px solid RGB(26,26,26);
+  border-bottom: 1px solid RGB(48,48,48);
+  height: 0px;
+  width: 65%;
+  margin-top: 7px;
+  margin-bottom: 21px;
+}
+
+.footer .footer-cat {
+  color: RGB(15,147,222);
+  float: right;
+}
+
+.footer .footer-link li{
+  text-align: left;
+  height: 26px;
+}
+
+.footer .footer-link a{
+  color: RGB(145,145,145);
+}
+
+.footer .footer-bottom, .footer-bottom a{
+  color: RGB(145,145,145);
+}
+
+.footer .col-xs-1,
+.footer .col-xs-2,
+.footer .col-xs-3,
+.footer .col-xs-4 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.graph-container {
+  box-sizing: border-box;
+  width: 675px;
+  height: 296px;
+  margin: 15px auto 30px auto;
+  position: absolute;
+  top: 40px;
+  left: 125px;
+}
+
+.graph-placeholder {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+.legend table {
+    border-spacing: 5px;
+}
+
+.data-label {
+  font-size:12px;
+  color:#545454;
+}
+
+.aws-data-total-label {
+  font-size:18px;
+  color:#2a2a2a;
+  font-weight:bold;
+}
+
+.data-total-label {
+  font-size:18px;
+  color:#0174ef;
+  font-weight:bold;
+}
+
+.mine-label {
+  color:#0076e4;
+  font-weight:bold;
+}
+.aws-label {
+  color:#545454;
+}
+
+.axes-lebel {
+  color:#545454;
+  font-weight:bold;
+}
+
+.input_grey{ float:left; vertical-align:top; border:1px solid #a1a1a1; padding-left:15px;}
+.input_green{ float:left;vertical-align:top; border:1px solid #2ec400; background-image:url(../images/icon/yes.png); background-position:right 6px center; background-repeat:no-repeat; padding-left:15px;}
+.input_red{ float:left; vertical-align:top; border:1px solid #ff0000; background-image:url(../images/icon/no.png); background-position:right 6px center; background-repeat:no-repeat; padding-left:15px;}
+.account_tab{ width:100%}
+.account_tdname{vertical-align:top;}
+.account_width355{width:355px; height:39px;margin:-8px 0 30px 25px; }
+.account_word{ float:left; color:#303030; font-size:12px; margin:3px 0 0 12px;}
+.account_word_red{ float:left; color:#ff0000; font-size:12px; margin:3px 0 0 12px;}
+.subsititute_up{ width:280px; height:43px; padding-top:10px;}
+.subsititute_btn{ float:left; width:100px; height:37px; line-height:34px; border:1px solid #bdbdbd; background:#dadada; margin-top:3px; text-align:center; margin-left:10px;}
+.subsititute_btn:hover{background:#bfbfbf; border:1px solid #a8a5a5;}
+
+.information_icon{ width:600px; height:111px; background:url(../images/information.png) no-repeat center; margin:0 0 20px 0;}
+.success_icon{ width:600px; height:111px; background:url(../images/success.png) no-repeat center; margin:0 0 20px 0;}
+.warning_icon{ width:600px; height:111px; background:url(../images/warning.png) no-repeat center; margin:0 0 20px 0;}
+.question_icon{ width:600px; height:111px; background:url(../images/question.png) no-repeat center; margin:0 0 23px 0;}
+.message_text{ height:25px; line-height:25px; font-size:18px; color:#2e2e2e; text-align:center; margin:0px 15px 39px 15px;}
+
+a,a:visited{text-decoration:none}
+a:hover,a:focus{color:#2a6496;text-decoration:none;}
+btn-link:hover,.btn-link:focus{color:#2a6496;text-decoration:none;background-color:transparent}
+
+/*longin register*/
+.frm_radio {
+  left: -999em;
+  position: absolute;
+} 
+.radio_label.login {
+  cursor: pointer;
+  display: inline-block;
+  //padding: 6px 20px 6px 0;
+  height: 43px;
+  line-height: 43px;
+  padding-right: 45px;
+}
+.radio_label.login span {
+  font-size: 18px;
+  color: #2e2e2e;
+  font-weight: normal;
+}
+.icon_radio {
+  background: url(../images/icon/radio.png) no-repeat;
+  display: inline-block;
+  height: 19px;
+  width: 19px;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-top: -4px;
+}
+.icon_radio.selected, .selected .icon_radio {
+  background: url(../images/icon/radio_checked.png) no-repeat;
+}

@@ -25,5 +25,5 @@ def sshCmd(ip, username, passwd, cmds):
         client.close()
 if __name__ == "__main__":
     cmds = ["source /opt/stack/rally/bin/activate && rally deployment list"]
-    sshCmd("192.168.39.123", "node123", "111111", cmds)
+    sshCmd("192.168.39.123", "stack", "111111", cmds)
 

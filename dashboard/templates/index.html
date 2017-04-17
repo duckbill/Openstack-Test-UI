@@ -1,48 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Openstack Health Check</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../static/home/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../static/home/css/bootstrap.min.css" type="text/css" />
+
+    <link rel="stylesheet" href="../static/home/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../static/home/css/site-theme.css" type="text/css" />
+
+    <link rel="stylesheet" href="../static/home/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="../static/home/css/test-mine.css" type="text/css" />
+    <link rel="stylesheet" href="../static/home/css/web-test.css" type="text/css" />
+    <link rel="stylesheet" href="../static/home/css/sweetalert.min.css" type="text/css" />
+
+
 </head>
-<style>
-    body {
-        text-align: center;
-        background-color: #DDDDDD
-    }
 
-    div {
-        display: inline;
-    }
-
-    .span12 {
-        padding-top: 8%;
-    }
-
-    .span6 {
-        margin-right: 10%;
-    }
-
-</style>
 <body>
-<div class="container-fluid">
-    <div class="row-fluid">
-        <div class="span12">
-            <h1 class="text-center">
-                <var>OpenStack健康检测</var>
-            </h1>
-            <br>
-            <br>
-            <br>
-            <div class="row">
-                <div class="span6">
-                    <a href="{{ url_for('tempest_index.index') }}"/><image alt="Tempest test 入口" src="../static/home/image/tempest.png"/>
-                </div>
-                <div class="span7">
-                    <a href="{{ url_for('rally_index.index') }}"/><image alt="Rally test 入口" src="../static/home/image/rally.png"/>
-                </div>
+    <div class="box">
+        <div class="top_bar">
+            <div class="title_text web title_text_icon">Openstack Health Check</div>
+        </div>
+        <div class="row center">
+            <div class="col-xs-12 center">
+                <form id="test-form" class="form-horizontal form" role="form" method="POST" action="">
+                    <div class="item_bar">
+                        <div class="pull-left">远程连接</div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-xs-3 el-label" for="input-host-ip">
+                <p>IP地址&nbsp;<i class="text-mandatory">*</i></p>
+              </label>
+                        <div class="col-xs-5 form-main-section">
+                            <input id="input-host-ip" class="form-control" type="text"  name="host-ip"  placeholder="请输入IP地址" required autofocus>
+                        </div>
+                        <div id="input-host-ip-description" class="col-xs-4 description blue">
+                            <p class="test_p">如192.168.1.1或192.168.1.1:8080</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-xs-3 el-label" for="input-web-username">
+                <p>用户名&nbsp;<i class="text-mandatory">*</i></p>
+              </label>
+                        <div class="col-xs-5 form-main-section">
+                            <input id="input-web-username" class="form-control" type="text" name="host-username"   placeholder="请输入用户名" >
+                        </div>
+                        <div id="input-web-username-description" class="col-xs-4 description blue">
+                            <p class="test_p">请输入6-12位字母或数字</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group inner-form-group">
+                        <label class="col-xs-3 el-label">
+                <p class="no_asterisk">认证信息</p>
+              </label>
+                        <div class="col-xs-5 form-main-section">
+                            <fieldset>
+                                <label class="certif-text">请选择认证方式</label>
+                                <div class="radio test_input">
+                                    <label>
+                    <label class="radio_label certif selected" for="input-web-password-radio">
+                      <i class="icon_radio"></i>
+                      <input type="radio" class="frm_radio" id="input-web-password-radio" name="input-host-auth-radio" value="password" checked="checked" />
+                    </label>
+                                    <div class="test_left">密码</div>
+                                    </label>
+                                    <input id="input-web-password" class="form-control indent" type="password" name="host-password"  placeholder="请输入密码">
+                                </div>
+                                <div><span id="input-web-password-description" class="inner-info">请输入密码</span></div>
+                                <div class="radio test_input">
+                                    <label>
+                    <label class="radio_label certif" for="input-web-key-radio">
+                      <i class="icon_radio"></i>
+                      <input type="radio" class="frm_radio" id="input-web-key-radio" name="input-host-auth-radio" value="key" />
+                    </label>
+                                    <div class="test_left">KEY</div>
+                                    </label>
+                                    <select id="input-web-key" class="form-control key" type="text" name="host-key" autofocus>
+                      <!-- will add options by js-->
+                    </select>
+                                    <input id="input-web-key-text" class="form-control key-text" type="text" name="host-key"  readonly value="Saver.key">
+                                    <button id="add-host-key" class="btn btn-upload" type="button">上传</button>
+                                </div>
+                                <div><span id="input-web-key-description" class="inner-info">小于20K</span></div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="form-group row form-outer-button">
+                        <div class="col-xs-3"></div>
+                        <div class="col-xs-2 form-main-section">
+{#                            <button id="web-test-cancel" class="btn btn-default btn-block" type="button">重置</button>#}
+                            <button id="web-cancel" class="btn btn-default btn-block" type="button">重置</button>
+
+                        </div>
+                        <div class="col-xs-3 form-main-section" style="padding-left: 20px;">
+                            <button id="web-submit" class="btn btn-primary btn-block test_but" type="submit">验证</button>
+                        </div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                    <div class="item_bar">
+                        <div class="pull-left">测试类别</div>
+                    </div>
+                    <div class="test-kinds">
+                                <div id="tempest" style="margin-left:15%;float:left">
+
+{#                                    <a href="{{ url_for('tempest_index.index') }}" />#}
+
+                                    
+                                    <image alt="Tempest test 入口" src="../static/home/images/tempest.png" height="200" ,width="200" />
+                                </div>
+                                <div id="rally" style=" display:inline" >
+{#                                    <a href="{{ url_for('rally_index.index') }}" />#}
+                                    <image alt="Rally test 入口" src="../static/home/images/rally.png" height="200" ,width="200" />
+                                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+<div class="bottom_box">
+
 </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="../static/home/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/home/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/home/js/fileinput.ext.js"></script>
+    <script type="text/javascript" src="../static/home/js/sweetalert.min.js"></script>
+
+
+    <script type="text/javascript" src="../static/home/js/test-common.js"></script>
+    <script type="text/javascript" src="../static/home/js/web-test.js"></script>
+    <script type="text/javascript">
+        $("#input-web-password-radio").click(function() {
+            $(this).parent().addClass("selected");
+            $(this).attr("checked", true);
+            $("#input-web-key-radio").parent().removeClass("selected");
+            $("#input-web-key-radio").attr("checked", false);
+        });
+        $("#input-web-password").click(function() {
+            $("#input-web-password-radio").parent().addClass("selected");
+            $("#input-web-password-radio").attr("checked", true);
+            $("#input-web-key-radio").parent().removeClass("selected");
+            $("#input-web-key-radio").attr("checked", false);
+        });
+        $("#input-web-key").click(function() {
+            $("#input-web-key-radio").parent().addClass("selected");
+            $("#input-web-key-radio").attr("checked", true);
+            $("#input-web-password-radio").parent().removeClass("selected");
+            $("#input-web-password-radio").attr("checked", false);
+        });
+        $("#input-web-key-text").click(function() {
+            $("#input-web-key-radio").parent().addClass("selected");
+            $("#input-web-key-radio").attr("checked", true);
+            $("#input-web-password-radio").parent().removeClass("selected");
+            $("#input-web-password-radio").attr("checked", false);
+        });
+        $("#add-host-key").click(function() {
+            $("#input-web-key-radio").parent().addClass("selected");
+            $("#input-web-key-radio").attr("checked", true);
+            $("#input-web-password-radio").parent().removeClass("selected");
+            $("#input-web-password-radio").attr("checked", false);
+        });
+        $("#input-web-key-radio").click(function() {
+            $(this).parent().addClass("selected");
+            $(this).attr("checked", true);
+            $("#input-web-password-radio").parent().removeClass("selected");
+            $("#input-web-password-radio").attr("checked", false);
+        });
+    </script>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
