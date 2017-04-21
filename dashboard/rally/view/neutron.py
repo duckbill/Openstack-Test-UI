@@ -4,7 +4,7 @@
 # @Mail      :  jczhangmail@126.com
 # @File      :  neutron.py
 
-from flask import Blueprint,render_template
+from flask import Blueprint,render_template,send_file
 
 
 rally_neutron = Blueprint('rally_neutron',__name__,url_prefix='/raly/neutron')
@@ -17,4 +17,4 @@ def index():
 
 @rally_neutron.route('/detail')
 def detail():
-    return render_template("rally/neutron/neutron_detail.html")
+    return send_file('templates/rally/neutron/neutron_detail.html')

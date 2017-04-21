@@ -12,7 +12,7 @@ from dashboard.tempest.view import *
 from test import read_test
 
 from remoteop import SSHOP
-from jsonop import store
+from jsonop import writefile
 
 application = create_app()
 
@@ -30,6 +30,10 @@ def index():
         ip = data["ip"]
         login_name = data["login_name"]
         password = data["password"]
+
+        config_path = "static/home"
+        config_file = "config.json"
+
         sshop = SSHOP(ip,login_name,password)
         sshop.test_connect()
         print sshop.statue
@@ -38,7 +42,8 @@ def index():
 
         if sshop.statue == 1:
             print statue,password
-            store(json_data)
+            # store(config_storepath,json_data)
+            writefile(config_path,config_file,"w+","json",json_data)
             data["statue"] = "yes"
         else:
             data["statue"] = "no"

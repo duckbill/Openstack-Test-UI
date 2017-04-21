@@ -4,7 +4,7 @@
 # @Mail      :  jczhangmail@126.com
 # @File      :  glance.py
 
-from flask import Blueprint,render_template
+from flask import Blueprint,render_template,send_file
 
 
 rally_glance = Blueprint('glance',__name__,url_prefix='/rally/glance')
@@ -17,4 +17,4 @@ def index():
 
 @rally_glance.route('/detail')
 def detail():
-    return render_template("rally/glance/glance_detail.html")
+    return send_file('templates/rally/glance/glance_detail.html')

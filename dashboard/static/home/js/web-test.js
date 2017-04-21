@@ -183,14 +183,16 @@ function web_test_submit() {
 
     if (!is_error) {
 
-        var student = new Object();
-        student.ip = $("#input-host-ip").val()
-        student.login_name = $("#input-web-username").val()
-        student.password = $("#input-web-password").val()
-        var data = JSON.stringify(student)
+        var configfile = new Object();
+        configfile.ip = $("#input-host-ip").val()
+        configfile.login_name = $("#input-web-username").val()
+        configfile.password = $("#input-web-password").val()
+        var data = JSON.stringify(configfile)
+
         // alert("ccc");
 
         $.ajax({
+            // "/"表示触发所跳转的页面
             url: "/",
             type: "POST",
             data: data,
@@ -266,7 +268,7 @@ function web_rally() {
         cache: false,
         success: function (data) {//请求成功完成后要执行的方法
             if (data.statue == 1) {
-                window.location.href = "rally"
+                window.location.href = "/rally"
                 return true
             }
             else {
@@ -280,10 +282,10 @@ function web_rally() {
         },
         error: function () {
             //json文件为空或者不存在
-            alert(typeof(data));
-            alert("22");
-
-            alert(data);
+            // alert(typeof(data));
+            // alert("22");
+            //
+            // alert(data);
 
             swal({
                 title: "没有发现连接配置信息！",
@@ -305,7 +307,7 @@ function web_tempest() {
         cache: false,
         success: function (data) {//请求成功完成后要执行的方法
             if (data.statue == 1) {
-                window.location.href = "tempest"
+                window.location.href = "/tempest"
                 return true
             }
             else {
@@ -318,10 +320,10 @@ function web_tempest() {
         },
         error: function () {
             //json文件为空或者不存在
-            alert(typeof(data));
-            alert("22");
-
-            alert(data);
+            // alert(typeof(data));
+            // alert("22");
+            //
+            // alert(data);
 
             swal({
                 title: "没有发现连接配置信息！",

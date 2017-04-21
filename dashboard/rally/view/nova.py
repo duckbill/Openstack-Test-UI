@@ -4,7 +4,7 @@
 # @Mail      :  jczhangmail@126.com
 # @File      :  nova.py
 
-from flask import Blueprint,render_template
+from flask import Blueprint,render_template,send_file
 
 
 rally_nova = Blueprint('rally_nova',__name__,url_prefix='/rally/nova')
@@ -17,4 +17,4 @@ def index():
 
 @rally_nova.route('/detail')
 def detail():
-    return render_template("rally/nova/nova_detail.html")
+    return send_file("templates/rally/nova/nova_detail.html")
